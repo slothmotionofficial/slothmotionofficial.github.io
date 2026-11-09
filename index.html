@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube Daily Intelligence</title>
+<meta name="description" content="A personal, read-only YouTube analytics briefing tool.">
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d1f; --muted:#5f6368; --card:#f5f5f7; --accent:#c4302b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111214; --fg:#f2f2f2; --muted:#a0a4a8; --card:#1c1e21; --accent:#ff5a52; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 60px; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 8px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; }
+  .lead { color:var(--muted); font-size:1.1rem; margin:0 0 24px; }
+  .card { background:var(--card); border-radius:14px; padding:16px 20px; }
+  ul { padding-left:20px; }
+  a { color:var(--accent); }
+  footer { margin-top:40px; color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>YouTube Daily Intelligence</h1>
+  <p class="lead">A personal tool that turns the owner's own YouTube channel analytics into a short daily briefing.</p>
+
+  <div class="card">
+    <strong>Who it's for:</strong> this app is used only by the owner of the Sloth Motion YouTube channel to analyse their own channel. It is not offered to the public.
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads the owner's channel statistics through Google's official YouTube Data API and YouTube Analytics API.</li>
+    <li>Produces a daily report: views, watch time, subscribers, retention, traffic sources and (if available) estimated revenue.</li>
+    <li>Runs entirely on the owner's own Windows PC. There is no server and no website account.</li>
+  </ul>
+
+  <h2>What it does not do</h2>
+  <ul>
+    <li>It has <strong>read-only</strong> access. It cannot upload, edit, delete, comment or change anything on YouTube.</li>
+    <li>It does not sell, share or publish anyone's data.</li>
+  </ul>
+
+  <h2>Google permissions requested</h2>
+  <ul>
+    <li><code>youtube.readonly</code>: view your YouTube account</li>
+    <li><code>yt-analytics-monetary.readonly</code>: view YouTube Analytics reports, including revenue</li>
+  </ul>
+
+  <p>Read the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <footer>Contact: <a href="https://github.com/slothmotionofficial/slothmotionofficial.github.io/issues">open an issue on GitHub</a></footer>
+</main>
+</body>
+</html>
